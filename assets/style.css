@@ -179,17 +179,17 @@ HERO
 
 .hero{
 
-width:min(var(--max-width),92%);
+width:min(1400px,92%);
 
 margin:auto;
 
-padding:100px 0;
+padding:70px 0 40px;
 
 display:grid;
 
-grid-template-columns:1.2fr .8fr;
+grid-template-columns:1fr 520px;
 
-gap:70px;
+gap:90px;
 
 align-items:center;
 
@@ -307,7 +307,6 @@ background:var(--primary);
 color:white;
 
 }
-
 /* =========================
 PROFILE IMAGE
 ========================= */
@@ -315,37 +314,38 @@ PROFILE IMAGE
 .hero-right{
 
 display:flex;
-
 justify-content:center;
+align-items:center;
 
 }
 
 .hero-right img{
 
-width:360px;
+width:430px;
+height:620px;
 
-height:360px;
+/* Show the full portrait */
+object-fit:contain;
+object-position:center;
 
-object-fit:cover;
+border-radius:24px;
 
-border-radius:28px;
+background:#111827;
 
-border:3px solid rgba(59,130,246,.35);
+border:2px solid rgba(59,130,246,.35);
 
 box-shadow:
+0 25px 70px rgba(0,0,0,.45);
 
-0 25px 60px rgba(0,0,0,.45);
-
-transition:var(--transition);
+transition:.35s ease;
 
 }
 
 .hero-right img:hover{
 
-transform:translateY(-8px);
+transform:translateY(-8px) scale(1.02);
 
 }
-
 /* =========================
 SECTION TITLES
 ========================= */
@@ -1246,9 +1246,9 @@ order:-1;
 
 .hero-right img{
 
-width:300px;
+width:3400px;
 
-height:300px;
+height:auto;
 
 }
 
@@ -1354,9 +1354,9 @@ left:6px;
 
 .hero-right img{
 
-width:240px;
+width:260px;
 
-height:240px;
+height:auto;
 
 }
 
