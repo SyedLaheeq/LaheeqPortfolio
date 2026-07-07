@@ -3,42 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List Application</title>
+    <title>Laheeq Syed | Software & Data Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <h1>📝 My To-Do List</h1>
-            
-            <div class="input-section">
-                <input 
-                    type="text" 
-                    id="todoInput" 
-                    class="todo-input" 
-                    placeholder="Add a new task..."
-                    autocomplete="off"
-                >
-                <button id="addBtn" class="add-btn">Add Task</button>
-            </div>
-
-            <div class="filter-section">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="active">Active</button>
-                <button class="filter-btn" data-filter="completed">Completed</button>
-            </div>
-
-            <ul id="todoList" class="todo-list">
-                <!-- Tasks will be added here -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">LS.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
+        </div>
+    </nav>
 
-            <div class="stats-section">
-                <p id="taskStats">0 tasks remaining</p>
-                <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Laheeq Syed</h1>
+            <h2>Software & Data Engineer</h2>
+            <p>Master's candidate in Computer Science specializing in high-performance enterprise backend architecture (Java/Spring Boot) and scalable machine learning data pipelines (Python).</p>
+            <div class="social-links">
+                <a href="https://github.com/SyedLaheeq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:syedlaheeq999@gmail.com"><i class="fas fa-envelope"></i> Email</a>
             </div>
         </div>
-    </div>
+    </header>
 
-    <script src="script.js"></script>
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Backend & APIs</h3>
+                <p>Java, Spring Boot, Python, FastAPI, GraphQL, REST APIs</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data & ML</h3>
+                <p>Pandas, Scikit-learn, SQL, Vector Databases (RAG), Distributed ML</p>
+            </div>
+            <div class="skill-card">
+                <h3>Infrastructure & Platforms</h3>
+                <p>Apache Kafka, Docker, Kubernetes, CI/CD, Elasticsearch Concepts</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-light">
+        <h2 class="section-title">Featured Architecture</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <h3>Big Data: Social Graph Processing</h3>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">SQL</span>
+                </div>
+                <p>Engineered data pipelines to process and analyze a massive Facebook network dataset containing over 39 million relationship rows, mapping complex structural topologies for large-scale distributed platforms.</p>
+                <a href="https://github.com/SyedLaheeq/FriendFeed" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="project-card">
+                <h3>High-Performance Route Optimization</h3>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">GraphQL</span>
+                    <span class="tag">Kafka</span>
+                </div>
+                <p>Acted as Lead Java Backend Developer for a PostNord application, architecting scalable microservices, integrating GraphQL APIs, and orchestrating asynchronous event-driven messaging via Apache Kafka.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Vector Architecture & AI Retrieval</h3>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">RAG</span>
+                </div>
+                <p>Developed a scalable Retrieval-Augmented Generation (RAG) framework using Hugging Face. Formulated high-dimensional vector embeddings, functioning similarly to Elasticsearch indexing for rapid querying.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Secure Containerized Infrastructure</h3>
+                <div class="tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Security</span>
+                </div>
+                <p>Architected a Docker-based project focused on implementing strict application security measures and isolating backend systems, mitigating system vulnerabilities for secure deployment.</p>
+                <a href="https://github.com/SyedLaheeq/Secure-Computer-Systems" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Laheeq Syed. Engineered for Scalability.</p>
+    </footer>
 </body>
 </html>
