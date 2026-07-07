@@ -1,4 +1,6 @@
 title: Laheeq Syed
-description: Software & Data Engineer | Java & Python
-remote_theme: orderedlist/modern
+description: Software Engineer | AI & Machine Learning
+markdown: kramdown
 
+plugins:
+  - jekyll-seo-tag
