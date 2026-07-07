@@ -1,135 +1,119 @@
-<style>
-  body {
-    background: #0d1117 !important; 
-    color: #c9d1d9 !important;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-  }
-  
-  /* Force the Jekyll theme to stop clipping the content */
-  .wrapper, section { 
-    max-width: 1000px !important; 
-    overflow: visible !important; 
-  }
+---
+layout: default
+title: About
+---
 
-  .about-container {
-    background: #161b22;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15); 
-    border: 1px solid #30363d;
-    border-top: 4px solid #00E5FF; 
-    margin-top: 2rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .back-link {
-    display: inline-block;
-    margin-bottom: 2rem;
-    color: #00E5FF !important;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: text-shadow 0.3s;
-  }
-  .back-link:hover { 
-    text-shadow: 0 0 10px #00E5FF; 
-  }
-
-  /* The flex fix that stops the text from cutting off */
-  .content-grid {
-    display: flex;
-    flex-wrap: wrap; /* Allows stacking on smaller screens */
-    gap: 3rem;
-    align-items: flex-start;
-  }
-
-  .profile-img {
-    width: 100%;
-    max-width: 280px; /* Limits size but allows shrinking */
-    flex-shrink: 0; /* Prevents the image from getting squished */
-    border-radius: 8px;
-    border: 2px solid #FF007F; 
-    box-shadow: 0 0 30px rgba(255, 0, 127, 0.4); 
-  }
-
-  .text-content {
-    flex: 1; /* Forces text to take up remaining space properly */
-    min-width: 300px; /* Forces wrap to next line if screen is too narrow */
-  }
-
-  .text-content h1 { 
-    color: #ffffff !important; 
-    font-size: 2.5em; 
-    margin-top: 0; 
-    border: none; 
-    text-shadow: 0 0 10px rgba(255,255,255,0.2); 
-  }
-  
-  .text-content h2 { 
-    color: #00E5FF !important; 
-    font-size: 1.5em; 
-    margin-top: 2rem; 
-    border-bottom: 1px solid #30363d; 
-    padding-bottom: 10px; 
-    text-transform: uppercase; 
-    letter-spacing: 2px;
-  }
-  
-  .text-content p { 
-    font-size: 1.1em; 
-    line-height: 1.7; 
-    color: #c9d1d9 !important; 
-    margin-bottom: 1rem; 
-  }
-  
-  .text-content strong { 
-    color: #00E5FF; 
-  }
-
-  /* Tech Badges */
-  .lang-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 1rem;
-  }
-  .lang-badge {
-    background: rgba(0, 229, 255, 0.05);
-    color: #00E5FF;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 0.95em;
-    border: 1px solid #00E5FF;
-    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-</style>
+<section class="about-page">
 
 <div class="about-container">
-  <a href="index.html" class="back-link">&larr; System.Back()</a>
-  
-  <div class="content-grid">
-    <img src="assets/profile.JPG" alt="Laheeq Syed">
-    
-    <div class="text-content">
-      <h1>About Laheeq Syed</h1>
-      <p>I am a Master's candidate in Computer Science at Uppsala University. Previously, I built a strong foundation in enterprise infrastructure as a Systems Engineer at <strong>Tata Consultancy Services</strong> until 2024.</p>
-      <p>Whether I am acting as a Lead Java Backend Developer to optimize logistics routes or architecting massive Python data pipelines to parse 39-million-row social graphs, I specialize in systems that require absolute scalability, security, and low latency.</p>
-      
-      <h2>Language Protocols</h2>
-      <div class="lang-grid">
-        <span class="lang-badge">English (Fluent)</span>
-        <span class="lang-badge">Swedish (Conversational)</span>
-        <span class="lang-badge">Hindi (Fluent)</span>
-        <span class="lang-badge">Urdu (Fluent)</span>
-        <span class="lang-badge">Telugu (Native)</span>
-        <span class="lang-badge">Arabic (Read & Write)</span>
-      </div>
-    </div>
-  </div>
+
+<a href="{{ '/' | relative_url }}" class="back-link">
+← Back to Home
+</a>
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img
+class="about-photo"
+src="{{ '/assets/profile.JPG' | relative_url }}"
+alt="Laheeq Syed">
+
 </div>
+
+<div class="about-content">
+
+<h1>About Me</h1>
+
+<p>
+
+I'm <strong>Laheeq Syed</strong>, a Software Engineer currently pursuing a Master's degree in Computer Science at <strong>Uppsala University</strong>, Sweden.
+
+</p>
+
+<p>
+
+Before starting my Master's, I worked as a <strong>Systems Engineer at Tata Consultancy Services (TCS)</strong>, where I gained experience developing enterprise software, backend services, automation solutions and scalable systems.
+
+</p>
+
+<p>
+
+My primary interests include Artificial Intelligence, Machine Learning, Distributed Systems, Backend Engineering, Data Science and Cloud Computing. I enjoy building software that is both technically robust and useful for solving real-world problems.
+
+</p>
+
+<h2>Languages</h2>
+
+<div class="badges">
+
+<span class="badge">English — Fluent</span>
+
+<span class="badge">Swedish — Beginner</span>
+
+<span class="badge">Hindi — Fluent</span>
+
+<span class="badge">Urdu — Fluent</span>
+
+<span class="badge">Telugu — Native</span>
+
+<span class="badge">Arabic — Read & Write</span>
+
+</div>
+
+<h2 style="margin-top:40px;">Interests</h2>
+
+<div class="badges">
+
+<span class="badge">Machine Learning</span>
+
+<span class="badge">Artificial Intelligence</span>
+
+<span class="badge">Backend Development</span>
+
+<span class="badge">Software Engineering</span>
+
+<span class="badge">Data Science</span>
+
+<span class="badge">Cloud Computing</span>
+
+<span class="badge">Linux</span>
+
+<span class="badge">Open Source</span>
+
+</div>
+
+<div style="margin-top:45px;">
+
+<a class="btn-primary"
+
+href="{{ '/resume.pdf' | relative_url }}">
+
+<i class="fa-solid fa-file-arrow-down"></i>
+
+Download Resume
+
+</a>
+
+<a class="btn-secondary"
+
+target="_blank"
+
+href="https://github.com/SyedLaheeq">
+
+<i class="fa-brands fa-github"></i>
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
