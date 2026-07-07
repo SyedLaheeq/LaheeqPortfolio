@@ -1,25 +1,32 @@
 <style>
   body {
-    background: #0d1117; /* Deep Tech Dark */
-    color: #c9d1d9;
+    background: #0d1117 !important; 
+    color: #c9d1d9 !important;
     font-family: 'Segoe UI', system-ui, sans-serif;
   }
-  .wrapper { max-width: 950px !important; }
+  
+  /* Force the Jekyll theme to stop clipping the content */
+  .wrapper, section { 
+    max-width: 1000px !important; 
+    overflow: visible !important; 
+  }
 
   .about-container {
     background: #161b22;
     padding: 3rem;
     border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15); /* Cyan Glow */
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15); 
     border: 1px solid #30363d;
-    border-top: 4px solid #00E5FF; /* Neon Cyan */
+    border-top: 4px solid #00E5FF; 
     margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .back-link {
     display: inline-block;
     margin-bottom: 2rem;
-    color: #00E5FF;
+    color: #00E5FF !important;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -31,29 +38,38 @@
     text-shadow: 0 0 10px #00E5FF; 
   }
 
+  /* The flex fix that stops the text from cutting off */
   .content-grid {
     display: flex;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
     gap: 3rem;
     align-items: flex-start;
   }
 
   .profile-img {
-    width: 300px;
+    width: 100%;
+    max-width: 280px; /* Limits size but allows shrinking */
+    flex-shrink: 0; /* Prevents the image from getting squished */
     border-radius: 8px;
-    border: 2px solid #FF007F; /* Neon Magenta/Pink */
-    box-shadow: 0 0 30px rgba(255, 0, 127, 0.4); /* Magenta Glow */
+    border: 2px solid #FF007F; 
+    box-shadow: 0 0 30px rgba(255, 0, 127, 0.4); 
   }
 
-  h1 { 
-    color: #ffffff; 
+  .text-content {
+    flex: 1; /* Forces text to take up remaining space properly */
+    min-width: 300px; /* Forces wrap to next line if screen is too narrow */
+  }
+
+  .text-content h1 { 
+    color: #ffffff !important; 
     font-size: 2.5em; 
     margin-top: 0; 
     border: none; 
     text-shadow: 0 0 10px rgba(255,255,255,0.2); 
   }
   
-  h2 { 
-    color: #00E5FF; 
+  .text-content h2 { 
+    color: #00E5FF !important; 
     font-size: 1.5em; 
     margin-top: 2rem; 
     border-bottom: 1px solid #30363d; 
@@ -62,14 +78,14 @@
     letter-spacing: 2px;
   }
   
-  p { 
+  .text-content p { 
     font-size: 1.1em; 
     line-height: 1.7; 
-    color: #8b949e; 
+    color: #c9d1d9 !important; 
     margin-bottom: 1rem; 
   }
   
-  strong { 
+  .text-content strong { 
     color: #00E5FF; 
   }
 
@@ -84,17 +100,13 @@
     background: rgba(0, 229, 255, 0.05);
     color: #00E5FF;
     padding: 8px 16px;
-    border-radius: 4px; /* Sharp tech edges */
+    border-radius: 4px;
     font-weight: bold;
     font-size: 0.95em;
     border: 1px solid #00E5FF;
     box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-
-  @media (max-width: 768px) {
-    .content-grid { flex-direction: column; align-items: center; text-align: center; }
   }
 </style>
 
