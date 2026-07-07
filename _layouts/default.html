@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>{{ page.title }} | {{ site.title }}</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="{{ '/assets/style.css' | relative_url }}">
+
+{% seo %}
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<a href="{{ '/' | relative_url }}">
+
+Laheeq Syed
+
+</a>
+
+</div>
+
+<ul>
+
+<li><a href="{{ '/' | relative_url }}">Home</a></li>
+
+<li><a href="{{ '/about' | relative_url }}">About</a></li>
+
+<li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+
+<li><a href="{{ '/resume.pdf' | relative_url }}">Resume</a></li>
+
+<li>
+
+<a href="https://github.com/SyedLaheeq">
+
+GitHub
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+<main>
+
+{{ content }}
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 Laheeq Syed
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
