@@ -1,11 +1,36 @@
 <style>
+  /* 1. Base Background */
   body {
-    background: #0d1117;
-    color: #c9d1d9;
+    background: #0d1117 !important;
+    color: #c9d1d9 !important;
     font-family: 'Segoe UI', system-ui, sans-serif;
   }
-  .wrapper { max-width: 950px !important; }
   
+  /* 2. Override Jekyll Theme Defaults for Readability */
+  h1, h2, h3, h4, h5, h6 { color: #00E5FF !important; }
+  p, li { color: #c9d1d9 !important; }
+  hr { border-color: #30363d !important; }
+  
+  /* Make the dropdown text visible and neon */
+  summary {
+    color: #00E5FF !important;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  summary code {
+    color: #FF007F !important;
+    background: rgba(255, 0, 127, 0.1) !important;
+    border: 1px solid #FF007F;
+  }
+  details p, details a { color: #c9d1d9 !important; }
+  details a:hover { color: #00E5FF !important; }
+
+  .wrapper { 
+    max-width: 950px !important; 
+  }
+  
+  /* 3. Hero Header Styling */
   .hero-header {
     background: #161b22;
     padding: 3rem;
