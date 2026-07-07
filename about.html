@@ -3,7 +3,163 @@ layout: default
 title: About
 ---
 
-<section class="about-page">
+<style>
+
+.about-container{
+    max-width:1200px;
+    margin:60px auto;
+    background:#161b22;
+    padding:50px;
+    border-radius:20px;
+    border:1px solid #2d3748;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.back-link{
+    display:inline-block;
+    margin-bottom:35px;
+    color:#3b82f6;
+    text-decoration:none;
+    font-weight:600;
+    font-size:16px;
+    transition:.3s;
+}
+
+.back-link:hover{
+    color:#60a5fa;
+    transform:translateX(-5px);
+}
+
+.content-grid{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.profile-img{
+
+    width:380px;
+    height:500px;
+
+    object-fit:cover;
+    object-position:center top;
+
+    border-radius:24px;
+
+    display:block;
+
+    margin:auto;
+
+    border:2px solid rgba(59,130,246,.3);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+}
+
+.text-content h1{
+
+    font-size:52px;
+    color:white;
+    margin-bottom:25px;
+
+}
+
+.text-content h2{
+
+    margin-top:40px;
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+.text-content p{
+
+    font-size:18px;
+    line-height:1.9;
+    color:#cbd5e1;
+    margin-bottom:20px;
+
+}
+
+.text-content strong{
+
+    color:#60a5fa;
+
+}
+
+.lang-grid{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:15px;
+
+}
+
+.lang-badge{
+
+    background:#1e293b;
+
+    color:#60a5fa;
+
+    border:1px solid rgba(96,165,250,.25);
+
+    padding:10px 16px;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.about-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+@media(max-width:900px){
+
+.about-container{
+
+padding:30px;
+
+}
+
+.content-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.profile-img{
+
+width:280px;
+height:370px;
+
+}
+
+.about-buttons{
+
+justify-content:center;
+
+}
+
+}
+
+</style>
 
 <div class="about-container">
 
@@ -11,18 +167,14 @@ title: About
 ← Back to Home
 </a>
 
-<div class="about-grid">
-
-<div class="about-image">
+<div class="content-grid">
 
 <img
-class="about-photo"
+class="profile-img"
 src="{{ '/assets/profile.JPG' | relative_url }}"
 alt="Laheeq Syed">
 
-</div>
-
-<div class="about-content">
+<div class="text-content">
 
 <h1>About Me</h1>
 
@@ -34,60 +186,57 @@ I'm <strong>Laheeq Syed</strong>, a Software Engineer currently pursuing a Maste
 
 <p>
 
-Before starting my Master's, I worked as a <strong>Systems Engineer at Tata Consultancy Services (TCS)</strong>, where I gained experience developing enterprise software, backend services, automation solutions and scalable systems.
+Prior to my Master's studies, I worked as a <strong>Systems Engineer at Tata Consultancy Services (TCS)</strong>, where I contributed to enterprise software development, backend services, automation, and scalable software solutions.
 
 </p>
 
 <p>
 
-My primary interests include Artificial Intelligence, Machine Learning, Distributed Systems, Backend Engineering, Data Science and Cloud Computing. I enjoy building software that is both technically robust and useful for solving real-world problems.
+My interests lie in Artificial Intelligence, Machine Learning, Backend Engineering, Distributed Systems, Data Science, and Cloud Computing. I enjoy designing software that is efficient, scalable, and solves real-world problems.
 
 </p>
 
 <h2>Languages</h2>
 
-<div class="badges">
+<div class="lang-grid">
 
-<span class="badge">English — Fluent</span>
+<span class="lang-badge">English • Fluent</span>
 
-<span class="badge">Swedish — Beginner</span>
+<span class="lang-badge">Swedish • Beginner</span>
 
-<span class="badge">Hindi — Fluent</span>
+<span class="lang-badge">Hindi • Fluent</span>
 
-<span class="badge">Urdu — Fluent</span>
+<span class="lang-badge">Urdu • Fluent</span>
 
-<span class="badge">Telugu — Native</span>
+<span class="lang-badge">Telugu • Native</span>
 
-<span class="badge">Arabic — Read & Write</span>
-
-</div>
-
-<h2 style="margin-top:40px;">Interests</h2>
-
-<div class="badges">
-
-<span class="badge">Machine Learning</span>
-
-<span class="badge">Artificial Intelligence</span>
-
-<span class="badge">Backend Development</span>
-
-<span class="badge">Software Engineering</span>
-
-<span class="badge">Data Science</span>
-
-<span class="badge">Cloud Computing</span>
-
-<span class="badge">Linux</span>
-
-<span class="badge">Open Source</span>
+<span class="lang-badge">Arabic • Read & Write</span>
 
 </div>
 
-<div style="margin-top:45px;">
+<h2>Interests</h2>
+
+<div class="lang-grid">
+
+<span class="lang-badge">Machine Learning</span>
+
+<span class="lang-badge">Artificial Intelligence</span>
+
+<span class="lang-badge">Backend Development</span>
+
+<span class="lang-badge">Software Engineering</span>
+
+<span class="lang-badge">Cloud Computing</span>
+
+<span class="lang-badge">Linux</span>
+
+<span class="lang-badge">Open Source</span>
+
+</div>
+
+<div class="about-buttons">
 
 <a class="btn-primary"
-
 href="{{ '/resume.pdf' | relative_url }}">
 
 <i class="fa-solid fa-file-arrow-down"></i>
@@ -97,9 +246,7 @@ Download Resume
 </a>
 
 <a class="btn-secondary"
-
 target="_blank"
-
 href="https://github.com/SyedLaheeq">
 
 <i class="fa-brands fa-github"></i>
@@ -115,5 +262,3 @@ GitHub
 </div>
 
 </div>
-
-</section>
