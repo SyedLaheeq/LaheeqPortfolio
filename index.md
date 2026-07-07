@@ -1,47 +1,80 @@
 <style>
   body {
-    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
-    color: #1e293b;
+    background: #0d1117;
+    color: #c9d1d9;
     font-family: 'Segoe UI', system-ui, sans-serif;
   }
   .wrapper { max-width: 950px !important; }
   
   .hero-header {
-    background: white;
+    background: #161b22;
     padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);
     text-align: center;
-    border-top: 6px solid #4F46E5;
+    border: 1px solid #30363d;
+    border-top: 4px solid #00E5FF;
     margin-bottom: 3rem;
   }
   
   .btn-primary {
     display: inline-block;
-    background: #4F46E5;
-    color: white !important;
+    background: transparent;
+    color: #00E5FF !important;
     padding: 0.8rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 4px;
+    border: 1px solid #00E5FF;
     text-decoration: none;
     font-weight: bold;
     margin-top: 1.5rem;
-    transition: background 0.3s;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
-  .btn-primary:hover { background: #3730A3; }
+  
+  .btn-primary:hover { 
+    background: #00E5FF; 
+    color: #0d1117 !important;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: #FF007F !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #FF007F;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .btn-secondary:hover {
+    background: #FF007F; 
+    color: #ffffff !important;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.6);
+  }
 </style>
 
 <div class="hero-header">
-  <h1 style="border:none; margin:0; font-size:3.5em; color:#0f172a;">Laheeq Syed</h1>
-  <h2 style="color:#4F46E5; border:none; font-weight:600;">Software & Data Engineer</h2>
-  <p style="font-size:1.1em; color:#475569; max-width:600px; margin:1rem auto;">Architecting high-performance enterprise backend systems and scalable machine learning data pipelines.</p>
+  <h1 style="border:none; margin:0; font-size:3.5em; color:#ffffff; text-shadow: 0 0 10px rgba(255,255,255,0.2);">Laheeq Syed</h1>
+  <h2 style="color:#00E5FF; border:none; font-weight:600; text-transform: uppercase; letter-spacing: 2px; margin-top: 10px;">Software & Data Engineer</h2>
+  <p style="font-size:1.1em; color:#8b949e; max-width:600px; margin:1rem auto;">Architecting high-performance enterprise backend systems and scalable machine learning data pipelines.</p>
   
   <div>
-    <a href="about.html" class="btn-primary">📖 Read Full About Me</a>
-    <a href="https://github.com/SyedLaheeq" target="_blank" class="btn-primary" style="background:#1e293b; margin-left:10px;">🐙 GitHub</a>
+    <a href="about.html" class="btn-primary">Initialize Profile</a>
+    <a href="https://github.com/SyedLaheeq" target="_blank" class="btn-secondary">Access GitHub</a>
   </div>
 </div>
 
----
+
 
 ## Technical Arsenal
 
