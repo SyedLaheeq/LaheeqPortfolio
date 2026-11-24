@@ -8,15 +8,11 @@ title: Projects
 <div class="container">
 
 <h2 class="section-title">
-
 Featured Projects
-
 </h2>
 
 <p class="section-subtitle">
-
-A selection of software engineering, machine learning, computer vision and data science projects.
-
+Applied AI systems, computer vision pipelines, distributed LLM research, and data engineering work.
 </p>
 
 <div class="projects">
@@ -26,43 +22,98 @@ A selection of software engineering, machine learning, computer vision and data 
 <div class="project-card">
 
 <h3>
-
-Distributed LLM Fine-Tuning
-
+FOREO Skin-GPT — AI Skincare Diagnostic Consultant
 </h3>
 
 <p>
+Built at <strong>FOREO Labs</strong> as an in-app AI beauty consultant that turns mobile skincare diagnostics into a personalized wellness loop. Uses <strong>OpenCV</strong> for real-time image preprocessing (normalization and illumination correction) coupled with <strong>SAM 3</strong> for zero-shot semantic facial zone mapping. A <strong>RAG</strong> pipeline queries a local vector database of dermatological guidelines and FOREO product specifications, combining retrieved domain knowledge with visual metrics via local <strong>Edge AI (Qwen)</strong> and an <strong>LLM agent workflow (Claude/Hermes)</strong> for structured JSON function-calling directly into user-specific FOREO device parameters.
+</p>
 
-Master's thesis investigating efficient and robust fine-tuning strategies for Large Language Models using parameter-efficient methods and federated learning. The project explores scalable distributed AI training under resource constraints.
+<div class="badges">
 
+<span class="badge">OpenCV</span>
+<span class="badge">SAM 3</span>
+<span class="badge">RAG</span>
+<span class="badge">Qwen (Edge AI)</span>
+<span class="badge">Claude / Hermes</span>
+<span class="badge">JSON Function Calling</span>
+
+</div>
+
+<div class="project-links">
+
+<span class="badge">FOREO Labs • Industry Project</span>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="project-card">
+
+<h3>
+Distributed LLM Fine-Tuning (Master's Thesis)
+</h3>
+
+<p>
+Uppsala University Master's thesis integrating <strong>Rotated LoRA (RoLoRA)</strong> into a sparse federated learning framework to fine-tune <strong>Llama-3-8B</strong> across decentralized participants without sharing raw data. Evaluated resilience against Byzantine attacks (Lie, Scaling, and Inverse Gradient) via GPU experiments on SLURM using PyTorch, Hugging Face PEFT, and Weights &amp; Biases.
+</p>
+
+<div class="badges">
+
+<span class="badge">Llama-3-8B</span>
+<span class="badge">RoLoRA</span>
+<span class="badge">Federated Learning</span>
+<span class="badge">PyTorch</span>
+<span class="badge">PEFT</span>
+<span class="badge">SLURM</span>
+
+</div>
+
+<div class="project-links">
+
+<a class="github"
+target="_blank"
+href="https://github.com/SyedLaheeq/MasterThesis_LORA">
+<i class="fa-brands fa-github"></i>
+GitHub
+</a>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="project-card">
+
+<h3>
+MindBridge — AI Conversational Support System
+</h3>
+
+<p>
+LLM-powered conversational system built with Retrieval-Augmented Generation (RAG) for grounded, context-aware multi-turn interactions. Implements document ingestion, embedding generation, and semantic retrieval using LangChain, Hugging Face Transformers, Sentence Transformers, FAISS, and ChromaDB with prompt alignment for robustness against ambiguous inputs.
 </p>
 
 <div class="badges">
 
 <span class="badge">Python</span>
-
-<span class="badge">PyTorch</span>
-
+<span class="badge">RAG</span>
+<span class="badge">LangChain</span>
+<span class="badge">FAISS</span>
+<span class="badge">ChromaDB</span>
 <span class="badge">Transformers</span>
 
-<span class="badge">Federated Learning</span>
-
-<span class="badge">LLMs</span>
-
 </div>
 
 <div class="project-links">
 
 <a class="github"
-
 target="_blank"
-
-href="https://github.com/SyedLaheeq/MasterThesis_LORA">
-
+href="https://github.com/SyedLaheeq">
 <i class="fa-brands fa-github"></i>
-
 GitHub
-
 </a>
 
 </div>
@@ -74,41 +125,30 @@ GitHub
 <div class="project-card">
 
 <h3>
-
-FriendFeed Analytics
-
+FriendFeed Social Network Analytics
 </h3>
 
 <p>
-
-Large-scale social network analytics platform capable of processing over 39 million relationships using graph analytics and Python data pipelines.
-
+Large-scale graph intelligence platform processing over 645K nodes and 39M relationships with Python and NetworkX. Builds analytical workflows for community detection, user behavior analysis, influence discovery, and visual reporting across interconnected network structures.
 </p>
 
 <div class="badges">
 
 <span class="badge">Python</span>
-
-<span class="badge">Pandas</span>
-
-<span class="badge">SQL</span>
-
 <span class="badge">NetworkX</span>
+<span class="badge">Pandas</span>
+<span class="badge">SQL</span>
+<span class="badge">Graph Analytics</span>
 
 </div>
 
 <div class="project-links">
 
 <a class="github"
-
 target="_blank"
-
 href="https://github.com/SyedLaheeq/FriendFeed">
-
 <i class="fa-brands fa-github"></i>
-
 GitHub
-
 </a>
 
 </div>
@@ -120,23 +160,119 @@ GitHub
 <div class="project-card">
 
 <h3>
-
-XR Industrial Digital Twin
-
+Image Segmentation &amp; Visual Pattern Recognition
 </h3>
 
 <p>
+Experimental computer vision pipeline built with PyTorch and OpenCV to isolate visual regions for segmentation and classification. Incorporates OpenCV preprocessing (noise reduction and contrast enhancement) alongside standardized annotation workflows to ensure reliable ground-truth training and evaluation.
+</p>
 
-Real-time industrial XR platform capable of visualizing hardware telemetry in an immersive environment for monitoring and simulation.
+<div class="badges">
 
+<span class="badge">Python</span>
+<span class="badge">PyTorch</span>
+<span class="badge">OpenCV</span>
+<span class="badge">Image Segmentation</span>
+
+</div>
+
+<div class="project-links">
+
+<a class="github"
+target="_blank"
+href="https://github.com/SyedLaheeq">
+<i class="fa-brands fa-github"></i>
+GitHub
+</a>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="project-card">
+
+<h3>
+ADEM — Emotional Recognition &amp; Adaptive Behaviour
+</h3>
+
+<p>
+Multimodal conversational agent built with Furhat Robotics and Python, integrating facial emotion recognition and NLP sentiment analysis to drive emotion-aware dialogue and adaptive response generation across varied interaction scenarios.
+</p>
+
+<div class="badges">
+
+<span class="badge">Python</span>
+<span class="badge">Furhat Robotics</span>
+<span class="badge">NLP</span>
+<span class="badge">Multimodal AI</span>
+
+</div>
+
+<div class="project-links">
+
+<a class="github"
+target="_blank"
+href="https://github.com/SyedLaheeq/ADEM_-Final_ver-">
+<i class="fa-brands fa-github"></i>
+GitHub
+</a>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="project-card">
+
+<h3>
+Explainable AI &amp; Intent Recognition Pipeline
+</h3>
+
+<p>
+NLP classification pipeline designed to process noisy, unstructured conversational text and map user expressions into structured intent and emotion categories, paired with systematic experimentation and interpretability evaluation in scikit-learn.
+</p>
+
+<div class="badges">
+
+<span class="badge">Python</span>
+<span class="badge">NLP</span>
+<span class="badge">Scikit-learn</span>
+<span class="badge">Explainable AI</span>
+
+</div>
+
+<div class="project-links">
+
+<a class="github"
+target="_blank"
+href="https://github.com/SyedLaheeq">
+<i class="fa-brands fa-github"></i>
+GitHub
+</a>
+
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="project-card">
+
+<h3>
+XR Industrial Digital Twin
+</h3>
+
+<p>
+Real-time industrial XR platform capable of visualizing hardware telemetry in an immersive environment for operational monitoring and simulation.
 </p>
 
 <div class="badges">
 
 <span class="badge">Unity</span>
-
 <span class="badge">XR</span>
-
 <span class="badge">JavaScript</span>
 
 </div>
@@ -144,15 +280,10 @@ Real-time industrial XR platform capable of visualizing hardware telemetry in an
 <div class="project-links">
 
 <a class="github"
-
 target="_blank"
-
 href="https://github.com/SyedLaheeq/xr-industrial-portfolio">
-
 <i class="fa-brands fa-github"></i>
-
 GitHub
-
 </a>
 
 </div>
@@ -164,23 +295,17 @@ GitHub
 <div class="project-card">
 
 <h3>
-
 Real-Time Sign Language Detection
-
 </h3>
 
 <p>
-
 Computer vision application that detects and interprets sign language gestures in real time using TensorFlow and deep learning.
-
 </p>
 
 <div class="badges">
 
 <span class="badge">TensorFlow</span>
-
 <span class="badge">Python</span>
-
 <span class="badge">Computer Vision</span>
 
 </div>
@@ -188,15 +313,10 @@ Computer vision application that detects and interprets sign language gestures i
 <div class="project-links">
 
 <a class="github"
-
 target="_blank"
-
 href="https://github.com/SyedLaheeq/RealTime-Sign-language-Detection">
-
 <i class="fa-brands fa-github"></i>
-
 GitHub
-
 </a>
 
 </div>
@@ -208,23 +328,17 @@ GitHub
 <div class="project-card">
 
 <h3>
-
 Secure Containerized Infrastructure
-
 </h3>
 
 <p>
-
-Implemented secure container environments using Docker with an emphasis on isolation, deployment security and system hardening.
-
+Implemented secure container environments using Docker with an emphasis on process isolation, deployment security, and Linux system hardening.
 </p>
 
 <div class="badges">
 
 <span class="badge">Docker</span>
-
 <span class="badge">Linux</span>
-
 <span class="badge">Security</span>
 
 </div>
@@ -232,15 +346,10 @@ Implemented secure container environments using Docker with an emphasis on isola
 <div class="project-links">
 
 <a class="github"
-
 target="_blank"
-
 href="https://github.com/SyedLaheeq/Secure-Computer-Systems">
-
 <i class="fa-brands fa-github"></i>
-
 GitHub
-
 </a>
 
 </div>
@@ -252,109 +361,17 @@ GitHub
 <div class="project-card">
 
 <h3>
-
-ADEM Emotional Recognition
-
-</h3>
-
-<p>
-
-Adaptive multimodal conversational AI capable of recognizing emotional cues and producing context-aware responses.
-
-</p>
-
-<div class="badges">
-
-<span class="badge">Python</span>
-
-<span class="badge">AI</span>
-
-<span class="badge">Deep Learning</span>
-
-</div>
-
-<div class="project-links">
-
-<a class="github"
-
-target="_blank"
-
-href="https://github.com/SyedLaheeq/ADEM_-Final_ver-">
-
-<i class="fa-brands fa-github"></i>
-
-GitHub
-
-</a>
-
-</div>
-
-</div>
-
-<!-- ===================== -->
-
-<div class="project-card">
-
-<h3>
-
-Interactive Paint Application
-
-</h3>
-
-<p>
-
-Desktop painting application supporting drawing, editing, custom brushes and interactive graphical tools.
-
-</p>
-
-<div class="badges">
-
-<span class="badge">Python</span>
-
-<span class="badge">GUI</span>
-
-</div>
-
-<div class="project-links">
-
-<a class="github"
-
-target="_blank"
-
-href="https://github.com/SyedLaheeq/InteractivePaint">
-
-<i class="fa-brands fa-github"></i>
-
-GitHub
-
-</a>
-
-</div>
-
-</div>
-
-<!-- ===================== -->
-
-<div class="project-card">
-
-<h3>
-
 Washington D.C. Bike Analytics
-
 </h3>
 
 <p>
-
-Data analytics project exploring public bike usage patterns and visualizing traffic behaviour through statistical analysis.
-
+Data analytics project exploring public bike usage patterns and visualizing urban mobility trends through statistical analysis.
 </p>
 
 <div class="badges">
 
 <span class="badge">Python</span>
-
 <span class="badge">Analytics</span>
-
 <span class="badge">Visualization</span>
 
 </div>
@@ -362,15 +379,42 @@ Data analytics project exploring public bike usage patterns and visualizing traf
 <div class="project-links">
 
 <a class="github"
-
 target="_blank"
-
 href="https://github.com/SyedLaheeq/BikeUsage">
-
 <i class="fa-brands fa-github"></i>
-
 GitHub
+</a>
 
+</div>
+
+</div>
+
+<!-- ===================== -->
+
+<div class="project-card">
+
+<h3>
+Interactive Paint Application
+</h3>
+
+<p>
+Desktop painting application supporting drawing, editing, custom brushes, and interactive graphical tools.
+</p>
+
+<div class="badges">
+
+<span class="badge">Python</span>
+<span class="badge">GUI</span>
+
+</div>
+
+<div class="project-links">
+
+<a class="github"
+target="_blank"
+href="https://github.com/SyedLaheeq/InteractivePaint">
+<i class="fa-brands fa-github"></i>
+GitHub
 </a>
 
 </div>
@@ -386,15 +430,11 @@ GitHub
 <section>
 
 <h2 class="section-title">
-
 Project Summary
-
 </h2>
 
 <p class="section-subtitle">
-
-Technologies and domains represented throughout my portfolio.
-
+Core technologies and domains represented across my portfolio.
 </p>
 
 <div class="skills">
@@ -404,19 +444,14 @@ Technologies and domains represented throughout my portfolio.
 <i class="fa-solid fa-code"></i>
 
 <h3>
-
 Programming
-
 </h3>
 
 <div class="badges">
 
 <span class="badge">Python</span>
-
 <span class="badge">Java</span>
-
 <span class="badge">SQL</span>
-
 <span class="badge">C++</span>
 
 </div>
@@ -428,20 +463,16 @@ Programming
 <i class="fa-solid fa-brain"></i>
 
 <h3>
-
-Artificial Intelligence
-
+AI, LLMs &amp; Vision
 </h3>
 
 <div class="badges">
 
-<span class="badge">LLMs</span>
-
 <span class="badge">PyTorch</span>
-
-<span class="badge">TensorFlow</span>
-
 <span class="badge">RAG</span>
+<span class="badge">LoRA / PEFT</span>
+<span class="badge">OpenCV &amp; SAM 3</span>
+<span class="badge">Edge AI (Qwen)</span>
 
 </div>
 
@@ -452,20 +483,15 @@ Artificial Intelligence
 <i class="fa-solid fa-server"></i>
 
 <h3>
-
-Software Engineering
-
+Backend &amp; Systems
 </h3>
 
 <div class="badges">
 
 <span class="badge">REST APIs</span>
-
+<span class="badge">Apache Kafka</span>
 <span class="badge">Docker</span>
-
-<span class="badge">Backend</span>
-
-<span class="badge">Linux</span>
+<span class="badge">Linux &amp; SLURM</span>
 
 </div>
 
@@ -476,20 +502,15 @@ Software Engineering
 <i class="fa-solid fa-chart-line"></i>
 
 <h3>
-
-Data Science
-
+Data &amp; Retrieval
 </h3>
 
 <div class="badges">
 
-<span class="badge">Analytics</span>
-
-<span class="badge">Pandas</span>
-
+<span class="badge">Pandas &amp; NumPy</span>
+<span class="badge">FAISS &amp; ChromaDB</span>
 <span class="badge">NetworkX</span>
-
-<span class="badge">Visualization</span>
+<span class="badge">Scikit-learn</span>
 
 </div>
 
