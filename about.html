@@ -34,128 +34,135 @@ title: About
     display:grid;
     grid-template-columns:380px 1fr;
     gap:60px;
-    align-items:center;
+    align-items:start;
 }
 
 .profile-img{
-
     width:380px;
     height:500px;
-
     object-fit:cover;
     object-position:center top;
-
     border-radius:24px;
-
     display:block;
-
     margin:auto;
-
     border:2px solid rgba(59,130,246,.3);
-
     box-shadow:0 25px 60px rgba(0,0,0,.45);
-
 }
 
 .text-content h1{
-
     font-size:52px;
     color:white;
     margin-bottom:25px;
-
 }
 
 .text-content h2{
-
     margin-top:40px;
     margin-bottom:20px;
-
     color:#ffffff;
-
 }
 
 .text-content p{
-
     font-size:18px;
     line-height:1.9;
     color:#cbd5e1;
     margin-bottom:20px;
-
 }
 
 .text-content strong{
-
     color:#60a5fa;
+}
 
+.timeline-list{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-top:15px;
+}
+
+.timeline-item{
+    background:#1e293b;
+    border:1px solid rgba(96,165,250,.2);
+    border-radius:14px;
+    padding:18px 22px;
+}
+
+.timeline-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:6px;
+}
+
+.timeline-role{
+    font-size:17px;
+    font-weight:700;
+    color:#ffffff;
+}
+
+.timeline-date{
+    font-size:14px;
+    color:#60a5fa;
+    font-weight:600;
+}
+
+.timeline-org{
+    font-size:15px;
+    color:#94a3b8;
+    margin-bottom:8px;
+}
+
+.timeline-desc{
+    font-size:15px !important;
+    line-height:1.65 !important;
+    color:#cbd5e1 !important;
+    margin-bottom:0 !important;
 }
 
 .lang-grid{
-
     display:flex;
     flex-wrap:wrap;
     gap:12px;
     margin-top:15px;
-
 }
 
 .lang-badge{
-
     background:#1e293b;
-
     color:#60a5fa;
-
     border:1px solid rgba(96,165,250,.25);
-
     padding:10px 16px;
-
     border-radius:10px;
-
     font-size:14px;
-
     font-weight:600;
-
 }
 
 .about-buttons{
-
     margin-top:40px;
-
     display:flex;
-
     gap:15px;
-
     flex-wrap:wrap;
-
 }
 
 @media(max-width:900px){
 
-.about-container{
+    .about-container{
+        padding:30px;
+    }
 
-padding:30px;
+    .content-grid{
+        grid-template-columns:1fr;
+        text-align:left;
+    }
 
-}
+    .profile-img{
+        width:280px;
+        height:370px;
+    }
 
-.content-grid{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
-}
-
-.profile-img{
-
-width:280px;
-height:370px;
-
-}
-
-.about-buttons{
-
-justify-content:center;
-
-}
+    .about-buttons{
+        justify-content:center;
+    }
 
 }
 
@@ -179,38 +186,91 @@ alt="Laheeq Syed">
 <h1>About Me</h1>
 
 <p>
-
-I'm <strong>Laheeq Syed</strong>, a Software Engineer currently pursuing a Master's degree in Computer Science at <strong>Uppsala University</strong>, Sweden.
-
+I'm <strong>Laheeq Syed</strong>, a Computer Science Master's graduate from <strong>Uppsala University</strong>, Sweden, specializing in Artificial Intelligence, Machine Learning, and Distributed Systems.
 </p>
 
 <p>
-
-Prior to my Master's studies, I worked as a <strong>Systems Engineer at Tata Consultancy Services (TCS)</strong>, where I contributed to enterprise software development, backend services, automation, and scalable software solutions.
-
+I currently work as a full-time <strong>AI Developer at Scientify Research AB</strong>, building AI-powered workflows for discovering, structuring, and matching research funding opportunities, and as a part-time <strong>AI Developer Intern at FOREO Labs</strong>, contributing to <strong>FOREO Skin-GPT</strong>—an edge-and-agentic skincare diagnostic assistant combining OpenCV, SAM 3, RAG, Qwen, and structured LLM orchestration.
 </p>
 
 <p>
-
-My interests lie in Artificial Intelligence, Machine Learning, Backend Engineering, Distributed Systems, Data Science, and Cloud Computing. I enjoy designing software that is efficient, scalable, and solves real-world problems.
-
+Prior to my Master's degree, I spent two years as a <strong>Systems Engineer at Tata Consultancy Services (TCS)</strong> developing Java backend services, REST APIs, SQL workflows, and event-driven integrations supporting enterprise operations, including logistics processes for PostNord.
 </p>
+
+<h2>Experience</h2>
+
+<div class="timeline-list">
+
+<div class="timeline-item">
+<div class="timeline-header">
+<span class="timeline-role">AI Developer (Full-time)</span>
+<span class="timeline-date">Oct 2026 – Present</span>
+</div>
+<div class="timeline-org">Scientify Research AB • Sweden</div>
+<p class="timeline-desc">
+Developing AI-supported workflows to discover, filter, monitor, and structure research grants—extracting eligibility criteria, requirements, and deadlines for automated funding-to-researcher matching.
+</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-header">
+<span class="timeline-role">AI Developer Intern (Part-time)</span>
+<span class="timeline-date">Sep 2026 – Present</span>
+</div>
+<div class="timeline-org">FOREO Labs • Sweden</div>
+<p class="timeline-desc">
+Building <strong>FOREO Skin-GPT</strong>, combining OpenCV preprocessing, SAM 3 zero-shot facial zone mapping, local dermatological RAG, Edge AI (Qwen), and Claude/Hermes structured JSON function-calling to map skin health metrics to personalized FOREO device parameters.
+</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-header">
+<span class="timeline-role">Systems Engineer — Backend &amp; Data Infrastructure</span>
+<span class="timeline-date">2022 – 2024</span>
+</div>
+<div class="timeline-org">Tata Consultancy Services (TCS) • India</div>
+<p class="timeline-desc">
+Built and maintained Java backend services, REST APIs, SQL pipelines, and event-driven architectures supporting enterprise systems, including PostNord logistics workflows.
+</p>
+</div>
+
+</div>
+
+<h2>Education</h2>
+
+<div class="timeline-list">
+
+<div class="timeline-item">
+<div class="timeline-header">
+<span class="timeline-role">M.Sc. in Computer Science &amp; Engineering</span>
+<span class="timeline-date">2024 – June 2026</span>
+</div>
+<div class="timeline-org">Uppsala University • Sweden</div>
+<p class="timeline-desc">
+Master's Thesis: <em>Efficient and Robust Fine-Tuning for Distributed LLM Systems</em> — RoLoRA in sparse federated learning for Llama-3-8B with Byzantine attack robustness evaluation on SLURM GPU clusters.
+</p>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-header">
+<span class="timeline-role">B.Tech in Computer Science</span>
+<span class="timeline-date">2018 – 2022</span>
+</div>
+<div class="timeline-org">RGM College of Engineering and Technology • India</div>
+</div>
+
+</div>
 
 <h2>Languages</h2>
 
 <div class="lang-grid">
 
 <span class="lang-badge">English • Fluent</span>
-
 <span class="lang-badge">Swedish • Beginner</span>
-
 <span class="lang-badge">Hindi • Fluent</span>
-
 <span class="lang-badge">Urdu • Fluent</span>
-
 <span class="lang-badge">Telugu • Native</span>
-
-<span class="lang-badge">Arabic • Read & Write</span>
+<span class="lang-badge">Arabic • Read &amp; Write</span>
 
 </div>
 
@@ -218,19 +278,13 @@ My interests lie in Artificial Intelligence, Machine Learning, Backend Engineeri
 
 <div class="lang-grid">
 
-<span class="lang-badge">Machine Learning</span>
-
-<span class="lang-badge">Artificial Intelligence</span>
-
-<span class="lang-badge">Backend Development</span>
-
-<span class="lang-badge">Software Engineering</span>
-
-<span class="lang-badge">Cloud Computing</span>
-
-<span class="lang-badge">Linux</span>
-
-<span class="lang-badge">Open Source</span>
+<span class="lang-badge">Large Language Models</span>
+<span class="lang-badge">Computer Vision</span>
+<span class="lang-badge">Edge AI &amp; RAG</span>
+<span class="lang-badge">Federated Learning</span>
+<span class="lang-badge">Distributed Systems</span>
+<span class="lang-badge">Backend Engineering</span>
+<span class="lang-badge">Linux &amp; Open Source</span>
 
 </div>
 
@@ -238,21 +292,22 @@ My interests lie in Artificial Intelligence, Machine Learning, Backend Engineeri
 
 <a class="btn-primary"
 href="{{ '/resume.pdf' | relative_url }}">
-
 <i class="fa-solid fa-file-arrow-down"></i>
-
 Download Resume
-
 </a>
 
 <a class="btn-secondary"
 target="_blank"
 href="https://github.com/SyedLaheeq">
-
 <i class="fa-brands fa-github"></i>
-
 GitHub
+</a>
 
+<a class="btn-secondary"
+target="_blank"
+href="https://www.linkedin.com/in/syed-laheeq-2100b1211/">
+<i class="fa-brands fa-linkedin"></i>
+LinkedIn
 </a>
 
 </div>
